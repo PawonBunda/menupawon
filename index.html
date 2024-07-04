@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pawon Bunda Fathar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles-mobile.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-toko">
+                <img src="Logo.png" alt="Pawon Bunda Logo">
+            </div>
+            <div class="nama-toko">
+                <h1> Pawon Bunda Fathar </h1>
+                <h2>Perumahan Griya Artha Rancabango Blok D2 No.8 <br>Rancabango Kec.Rajeg Kab. Tangerang</h2>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu-makanan.html">Makanan</a></li>
+                <li><a href="menu-minuman.html">Minuman</a></li>
+                <li><a href="keranjang-pesanan.html">Pesanan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content container">
+        <h2>Selamat Datang di Pawon Bunda Catering</h2>
+        <p>
+            Pawon Bunda Catering menyediakan layanan catering untuk berbagai acara,
+            baik partai besar maupun kecil. Nikmati hidangan lezat dan layanan
+            profesional kami untuk membuat acara Anda menjadi sukses dan tak terlupakan.
+        </p>
+
+        <h3>Menu Catering</h3>
+        <p>
+            Pilih dari beragam menu catering kami yang disesuaikan untuk berbagai
+            tipe acara. Mulai dari acara Pengajian , Syukuran dan Acara lainnya, kami
+            menyediakan pilihan yang memikat lidah dan memuaskan selera.
+        </p>
+
+        <h3>Pesan Catering Sekarang</h3>
+        <p>
+            Silakan hubungi kami untuk memesan catering untuk acara Anda.
+            Kami siap melayani pesanan catering untuk partai besar. 
+            Tidak hanya itu, kami juga menyediakan
+            layanan catering untuk acara kecil seperti pertemuan bisnis, arisan, atau
+            kumpul-kumpul keluarga.
+        </p>
+
+        <div class="contact-info">
+            <p>Hubungi kami untuk pemesanan:</p>
+            <div class="contact-icons">
+                <p><img src="phone-volume-solid.svg" alt="Phone Icon" class="icon"> +6285642670676</p>
+                <p><img src="envelope-solid.svg" alt="Email Icon" class="icon"> pawonbunda.fathar@gmail.com</p>
+            </div>
+        </div>
+
+        <button class="cta-button" onclick="redirectToWhatsApp()">Pesan Sekarang</button>
+        <!-- Duplicate button removed -->
+    </section>
+
+        <footer>
+            <p>&copy; 2023 Pawon Bunda</p>
+            <a href="https://maps.app.goo.gl/64PffBRArk9avG8aA" target="_blank">
+                <img src="map-location-dot-solid.svg" alt="Google Maps Icon" style="width: 20px; height: 20px; margin-right: 5px;">
+                Kunjungi Lokasi di Google Maps
+            </a>
+        </footer>
+    
+
+    <script>
+        function redirectToWhatsApp() {
+            const whatsappNumber = "+6285642670676"; // Replace with your WhatsApp number
+            const message = encodeURIComponent("Halo, saya ingin memesan catering.");
+            window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+        }
+    </script>
+
+    <style>
+        /* Additional styles for icons */
+        .icon {
+            width: 20px; /* Adjust the width as needed */
+            height: 20px; /* Adjust the height as needed */
+            margin-right: 5px; /* Add margin for spacing */
+            color: #3B0B0B; /* Adjust the color as needed */
+        }
+    </style>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Keranjang Pesanan - Pawon Bunda</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo-toko">
+                <img src="Logo.png" alt="Pawon Bunda Logo">
+            </div>
+            <div class="nama-toko">
+                <h1> Pawon Bunda Fathar </h1>
+                <h2>Perumahan Griya Artha Rancabango Blok D2 No.8 <br>Rancabango Kec.Rajeg Kab. Tangerang</h2>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu-makanan.html">Makanan</a></li>
+                <li><a href="menu-minuman.html">Minuman</a></li>
+                <li><a href="keranjang-pesanan.html">Pesanan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Keranjang Pesanan</h2>
+    <div id="cart-items"></div>
+
+    
+    <div id="total"></div>
+    
+     <!-- Form untuk identitas pemesan -->
+     <form>
+        <div class="form-row">
+            <label for="customerName">Nama Pemesan:</label>
+            <input type="text" id="customerName" placeholder="Masukkan nama Anda">
+        </div>
+        <div class="form-row">
+            <label for="customerAddress">Alamat Pemesan:</label>
+            <input type="text" id="customerAddress" placeholder="Masukkan alamat Anda">
+        </div>
+    
+        <div class="form-row">
+            <label for="catatan">Catatan:</label>
+            <textarea id="catatan" placeholder="Tambahkan catatan (opsional)"></textarea>
+        </div>
+    </form>
+
+    <button onclick="checkout()">Checkout</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            updateCartView();
+        });
+    </script>
+
+<!--    <a href="https://api.whatsapp.com/send?phone=+6285642670676&text=Bunda Pesan donk..." target="_blank">
+    <button class="btn-floating whatsapp">
+        <img src="whatsapp1.png" alt="whatsapp">
+        <span>Whatsapp</span>
+    </button>
+    </a>
+-->
+
+    <footer>
+        <p>&copy; 2023 Pawon Bunda</p>
+        <a href="https://maps.app.goo.gl/64PffBRArk9avG8aA" target="_blank">
+            <img src="map-location-dot-solid.svg" alt="Google Maps Icon" style="width: 20px; height: 20px; margin-right: 5px;">
+            Kunjungi Lokasi di Google Maps
+        </a>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles-mobile.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Menu Minuman - Pawon Bunda</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo-toko">
+                <img src="Logo.png" alt="Pawon Bunda Logo">
+            </div>
+            <div class="nama-toko">
+                <h1> Pawon Bunda Fathar </h1>
+                <h2>Perumahan Griya Artha Rancabango Blok D2 No.8 <br>Rancabango Kec.Rajeg Kab. Tangerang</h2>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu-makanan.html">Makanan</a></li>
+                <li><a href="menu-minuman.html">Minuman</a></li>
+                <li><a href="keranjang-pesanan.html">Pesanan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2><center> Menu Minuman </center></h2>
+    <!--NO 1-->
+    <div class="menu-items-container">
+        <div class="menu-item" data-name="es ocean blue" data-price="6000">
+            <img src="Foto Minuman/es ocean blue.jpg" alt="es ocean blue">
+                <span>Es Ocean Blue</span>
+                <ul>Rp 6,000</ul>
+            <button onclick="addToCart('es ocean blue', 6000)">Pesan</button>
+        </div>
+    <!--NO 2-->
+        <div class="menu-item" data-name="es jellynuyt" data-price="6000">
+            <img src="Foto Minuman/es jellynut.jpg" alt="es jellynuyt">
+                <span>Es Jellynuyt</span>
+                <ul>Rp 6,000</ul>
+            <button onclick="addToCart('es jellynuyt', 6000)">Pesan</button>
+        </div>
+    <!--NO 3-->
+        <div class="menu-item" data-name="pop ice Coklat" data-price="5000">
+            <img src="Foto Minuman/pop ice1.jpg" alt="pop ice Coklat">
+                <span>Pop Ice Coklat</span>
+                <ul>Rp 5,000</ul>
+            <button onclick="addToCart('pop ice Coklat', 5000)">Pesan</button>
+        </div>
+    <!--NO 4-->
+        <div class="menu-item" data-name="es cappucino cincau" data-price="6000">
+            <img src="Foto Minuman/es cappucino cincau.jpg" alt="es cappucino cincau">
+                <span>Es Cappucino Cincau</span>
+                <ul>Rp 6,000</ul>
+            <button onclick="addToCart('es cappucino cincau', 6000)">Pesan</button>
+        </div>
+    <!--NO 5-->
+        <div class="menu-item" data-name="pop ice Melon" data-price="5000">
+            <img src="Foto Minuman/pop ice2.jpg" alt="pop ice Melon">
+                <span>Pop Ice Melon</span>
+                <ul>Rp 5,000</ul>
+            <button onclick="addToCart('pop ice Melon', 5000)">Pesan</button>
+        </div>
+    <!--NO 6-->
+        <div class="menu-item" data-name="es lemon tea" data-price="6000">
+            <img src="Foto Minuman/es lemon tea.jpg" alt="es lemon tea">
+                <span>Es Lemon Tea</span>
+                <ul>Rp 6,000</ul>
+            <button onclick="addToCart('es lemon tea', 6000)">Pesan</button>
+        </div>
+    <!--NO 7-->
+        <div class="menu-item" data-name="lemon tea Panas" data-price="6000">
+            <img src="Foto Minuman/PBF.png" alt="lemon tea Panas">
+                <span>Lemon Tea Panas</span>
+                <ul>Rp 6,000</ul>
+            <button onclick="addToCart('lemon tea Panas', 6000)">Pesan</button>
+        </div>
+    <!--N0 8-->
+        <div class="menu-item" data-name="Es Teh Manis" data-price="3000">
+            <img src="Foto Minuman/PBF.png" alt="Es Teh Manis">
+                <span>Es Teh Manis</span>
+                <ul>Rp 3,000</ul>
+            <button onclick="addToCart('Es Teh Manis', 3000)">Pesan</button>
+        </div>
+    <!--NO 9-->
+        <div class="menu-item" data-name="Teh Manis Panas" data-price="3000">
+            <img src="Foto Minuman/PBF.png" alt="Teh Manis Panas">
+                <span>Teh Manis Panas</span>
+                <ul>Rp 3,000</ul>
+            <button onclick="addToCart('Teh Manis Panas', 3000)">Pesan</button>
+        </div>
+    <!--NO 10-->
+        <div class="menu-item" data-name="Es Kopi" data-price="4000">
+            <img src="Foto Minuman/PBF.png" alt="Es Kopi">
+                <span>Es Kopi</span>
+                <ul>Rp 4,000</ul>
+            <button onclick="addToCart('Es Kopi', 4000)">Pesan</button>
+        </div>
+    <!--NO 11-->
+        <div class="menu-item" data-name="Kopi Panas" data-price="4000">
+            <img src="Foto Minuman/PBF.png" alt="kopi Panas">
+                <span>Kopi Panas</span>
+                <ul>Rp 4,000</ul>
+            <button onclick="addToCart('Kopi Panas', 4000)">Pesan</button>
+        </div>
+    <!-- Tambahkan daftar menu minuman lainnya disini -->
+    </div>
+
+<!--    <a href="https://api.whatsapp.com/send?phone=+6285642670676&text=Bunda Pesan donk..." target="_blank">
+        <button class="btn-floating whatsapp">
+            <img src="whatsapp1.png" alt="whatsapp">
+            <span>Whatsapp</span>
+        </button>
+    </a>
+-->
+
+
+        <footer>
+            <p>&copy; 2023 Pawon Bunda</p>
+            <a href="https://maps.app.goo.gl/64PffBRArk9avG8aA" target="_blank">
+                <img src="map-location-dot-solid.svg" alt="Google Maps Icon" style="width: 20px; height: 20px; margin-right: 5px;">
+                Kunjungi Lokasi di Google Maps
+            </a>
+        </footer>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

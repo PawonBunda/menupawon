@@ -1,0 +1,353 @@
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+@font-face {
+font-family: 'Lato';
+src: url('./font/Lato-Regular.ttf');
+font-weight: normal;
+font-style: normal;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    border: 3px solid #3B0B0B;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: whitesmoke;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    background-color: #FFFF00;
+    border: 3px solid #3B0B0B;
+    max-width: 100%;
+}
+
+header {
+    background: url('Background.jpg') center/cover no-repeat; /* Ganti 'path/to/your/image.jpg' dengan path gambar Anda */
+    border: 3px solid #3B0B0B;
+    max-width: 100%;
+    height: auto; /* Sesuaikan tinggi header sesuai kebutuhan */
+    position: relative;
+}
+
+.logo-toko {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Mengizinkan wrap pada logo jika ukurannya besar */
+}
+
+
+.logo-toko img {
+    width: 100px;
+    width: 100%;
+    max-width: 160px;
+    height: 160px;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.nama-toko {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #3B0B0B;
+    margin-top: -160px;
+}
+
+.nama-toko h1 {
+    font-size: 50px;
+    font-family: 'Berkshire Swash', serif;
+    margin: 10px 0;
+}
+
+.nama-toko h2 {
+    font-size: 17px;
+    margin: 5px 0;
+}
+
+nav {
+    background-color: #350b0b;
+    padding: 10px;
+    border-radius: px;
+    max-width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    background-color: #FFFF00; /* Warna abu-abu gelap saat hover */
+    border-radius: 8px;
+    color: #350b0b;
+}
+
+
+
+.logo img {
+    width: 160px;
+    height: 160px;
+    border-radius: 10px;
+    top: 1%;
+    left: 3%;
+    
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #350b0b;
+}
+
+.menu-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.menu-item {
+    width: 100%; /* Mengisi lebar container */
+    max-width: 300px; /* Menambahkan max-width untuk menghindari item yang terlalu lebar */
+    border: none;
+    border-radius: 5px;
+    margin: 10px auto; /* Mengatur margin agar berada di tengah */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 3px 3px 8px #b1b1b1, -6px -6px 8px #ffffff;
+}
+
+.menu-item span,
+.menu-item ul {
+    text-align: center;
+    color: #350b0b;
+    font-family: 'Lato', sans-serif;
+    font-weight: 990;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px #b1b1b1, -6px -6px 8px #ffffff;
+}
+
+
+.menu-item button {
+    cursor: pointer;
+    background-color: #FFFF00;
+    color: #350b0b;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    width: 110px;
+    height: 25px;
+    border: 0px solid #350b0b;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px #b1b1b1, -6px -6px 8px #ffffff;
+}
+
+.menu-item button:hover {
+    background-color: #350b0b;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    .nama-toko {
+        margin-top: 10px;
+    }
+
+    .logo-toko {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-toko img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .menu-items-container {
+        justify-content: center;
+    }
+
+    .menu-item {
+        width: 90%;
+    }
+}
+
+.btn-floating {
+    position: fixed;
+    right: 20px;
+    bottom: 90px;
+    background-color: green;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border: 2px solid rgb(143, 143, 143);
+    z-index: 9999;
+    color: white;
+    transition: .2s;
+}
+
+.btn-floating:hover {
+    width: auto;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.btn-floating span {
+    font-size: 20px;
+    margin-left: 5px;
+    font-family: Lato, sans-serif;
+    transition: .2s;
+    line-height: 0px;
+    display: none;
+}
+
+.btn-floating:hover span {
+    display: inline-block;
+}
+
+.btn-floating:hover img {
+    margin-bottom: -3px;
+}
+
+.btn-floating.whatsapp:hover {
+    background-color: green;
+    border: 2px solid rgb(143, 143, 143);
+
+}
+
+/*keranjang pesanan*/
+
+
+
+
+
+
+
+
+footer {
+    background: url('Background.jpg') center/cover no-repeat; /* Ganti 'path/to/your/footer-image.jpg' dengan path gambar footer Anda */
+    color: #350b0b;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 900;
+    padding: 10px 0;
+    max-width: 100%;
+    border: 3px solid #350b0b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #350b0b;
+    font-weight: bold;
+    margin: 1px 0; /* Mengurangi margin di atas dan bawah untuk memberikan ruang yang lebih baik */
+}
+
+
+footer a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+footer a:hover {
+    color: #5c2d00;
+}
+
+
+footer p button {
+    border: 0px;
+    background: none;
+    font-weight: bold;
+}
+
+.cta-button {
+    cursor: pointer;
+    background-color: #FFFF00;
+    color: #3B0B0B;
+    border: 3px solid #350b0b;
+    border-radius: 10px;
+    padding: 10px 20px; /* Adjusted padding */
+    font-size: 16px; /* Adjusted font size */
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 20px; /* Added margin-top */
+    margin-bottom: 20px; /* Added margin-bottom for additional spacing */
+}
+
+.cta-button:hover {
+    background-color: #5c2d00;
+    color: white;
+}
+
+
+.nama-toko {
+    text-align: center;
+    margin-bottom: 20px; /* Menambahkan margin di bagian bawah untuk memberikan ruang antara alamat dan tautan */
+}
+
+.nama-toko h2 {
+    margin-top: 10px; /* Menambahkan margin di bagian atas h2 */
+}
+
+.nama-toko h2 a {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Menyusun secara horizontal di tengah */
+    text-decoration: none;
+    color: #3B0B0B;
+    font-weight: bold;
+}
+
+.nama-toko h2 a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.nama-toko h2 a:hover {
+    color: #5c2d00;
+}
+
+

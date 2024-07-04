@@ -1,0 +1,370 @@
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+@font-face {
+font-family: 'Lato';
+src: url('./font/Lato-Regular.ttf');
+font-weight: normal;
+font-style: normal;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    border: 3px solid #3B0B0B;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: whitesmoke;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    background: url('Background.jpg') center/cover no-repeat;
+    border: 3px solid #3B0B0B;
+    max-width: 100%;
+    height: auto; 
+    position: relative;
+}
+
+.logo-toko {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+
+.logo-toko img {
+    width: 100px;
+    width: 100%;
+    max-width: 160px;
+    height: 160px;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.nama-toko {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #3B0B0B;
+    margin-top: -160px;
+}
+
+.nama-toko h1 {
+    font-size: 50px;
+    font-family: 'Berkshire Swash', serif;
+    margin: 10px 0;
+}
+
+.nama-toko h2 {
+    font-size: 17px;
+    margin: 5px 0;
+}
+
+nav {
+    background-color: #350b0b;
+    padding: 10px;
+    border-radius: px;
+    max-width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    background-color: #FFFF00; 
+    border-radius: 8px;
+    color: #350b0b;
+}
+
+
+
+.logo img {
+    width: 160px;
+    height: 160px;
+    border-radius: 10px;
+    top: 1%;
+    left: 3%;
+    
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #350b0b;
+}
+
+#cart-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#total {
+    font-family : 'Lato';
+    color: #350b0b;
+    text-align: center;
+    font-size: 25px;
+}
+
+.menu-item {
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 3px 3px 8px #b1b1b1, -6px -6px 8px #ffffff;
+}
+
+
+
+#total {
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background: url('Background1.jpg') center/cover no-repeat;
+    padding: 20px;
+    border: 3px solid #350b0b;
+    background-color: #FFFF00;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px #b1b1b1, -6px -6px 8px #ffffff;
+}
+
+.form-row {
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #350b0b;
+    border-radius: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #350b0b;
+    border-radius: 5px;
+    box-sizing: border-box;
+    
+}
+
+
+.cart-item {
+    border: 3px solid #350b0b; /* Garis pemisah antar item */
+    background-color: #FFFF00;
+    font-family: 'Lato';
+    margin-bottom: 10px; /* Jarak antara setiap item */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+.item-info {
+    display: flex;
+    font-family: 'Lato';
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.item-actions {
+    display: flex;
+    font-family: 'Lato';
+    align-items: center;
+    gap: 5px;
+}
+
+.action-btn {
+    cursor: pointer;
+    padding: none;
+    box-shadow: none;
+    border: 1px solid whitesmoke;
+
+}
+
+.quantity {
+    padding: 10 20px; /* Sesuaikan ukuran padding */
+    font-family: 'Lato';
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    background-color: #FFFF00;
+    color: #350b0b;
+    font-family: 'Lato';
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 3px solid #350b0b;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px #b1b1b1, -6px -6px 8px #ffffff;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #350b0b;
+    color: #ffffff;
+}
+
+
+
+button {
+    margin-bottom: 20px;
+}
+
+.btn-floating {
+    position: fixed;
+    right: 20px;
+    bottom: 90px;
+    background-color: green;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border: 2px solid rgb(143, 143, 143);
+    z-index: 9999;
+    color: white;
+    transition: .2s;
+}
+
+.btn-floating:hover {
+    width: auto;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.btn-floating span {
+    font-size: 20px;
+    margin-left: 5px;
+    font-family: Lato, sans-serif;
+    transition: .2s;
+    line-height: 0px;
+    display: none;
+}
+
+.btn-floating:hover span {
+    display: inline-block;
+}
+
+.btn-floating:hover img {
+    margin-bottom: -3px;
+}
+
+.btn-floating.whatsapp:hover {
+    background-color: green;
+    border: 2px solid rgb(143, 143, 143);
+
+}
+
+@media screen and (max-width: 768px) {
+    .nama-toko {
+        margin-top: 10px;
+    }
+
+    .logo-toko {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-toko img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .menu-items-container {
+        justify-content: center;
+    }
+
+    .menu-item {
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background: url('Background.jpg') center/cover no-repeat; /* Ganti 'path/to/your/footer-image.jpg' dengan path gambar footer Anda */
+    color: #350b0b;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 900;
+    padding: 10px 0;
+    max-width: 100%;
+    border: 3px solid #350b0b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #350b0b;
+    font-weight: bold;
+    margin: 1px 0; /* Mengurangi margin di atas dan bawah untuk memberikan ruang yang lebih baik */
+}
+
+footer a:hover {
+    color: #5c2d00;
+}
+
+/*  warna kuning terang : #FFFF00
+    warna kuning gelap : #ffd700
