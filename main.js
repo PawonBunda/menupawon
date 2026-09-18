@@ -151,7 +151,7 @@ function checkout() {
     }
 
     // Langsung membuka aplikasi WhatsApp dengan pesan dan detail pesanan
-    const whatsappNumber = "+6285642670676"; // Ganti dengan nomor WhatsApp restoran
+    const whatsappNumber = "+628128435889"; // Ganti dengan nomor WhatsApp restoran
     const whatsappMessage = encodeURIComponent(orderMessage);
     window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, '_blank');
 
